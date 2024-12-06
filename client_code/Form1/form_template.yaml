@@ -1,0 +1,168 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'WEZQJL,SGKAXI'}
+    name: image_1
+    properties: {height: 42.32421875, source: _/theme/Flag-Ethiopia.webp}
+    type: Image
+  - layout_properties: {grid_position: 'WEZQJL,EOSVLQ'}
+    name: label_1
+    properties: {align: center, bold: true, font_size: 30, text: Ethiopia Locality Transliteration Standardizer}
+    type: Label
+  - layout_properties: {grid_position: 'WEZQJL,DVJVQE'}
+    name: image_1_copy
+    properties: {height: 42.32421875, source: _/theme/Flag-Ethiopia.webp}
+    type: Image
+  - layout_properties: {grid_position: 'EAVCYL,DDVNCO'}
+    name: rich_text_1
+    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you!', font_size: 18}
+    type: RichText
+  - layout_properties: {grid_position: 'HHBVLC,DXBSSB'}
+    name: label_7
+    properties: {bold: true, font_size: 20, text: 'Step 1: Upload a Master Mapping File'}
+    type: Label
+  - components: []
+    layout_properties: {grid_position: 'CHZACW,KRERUM'}
+    name: rich_text_2
+    properties: {content: 'Please upload a .xlsx file containing all correct Ethiopian region/zone/woreda translations you would like to be contained in your "Master Mapping". This file should contain all correct spellings for all Ethiopian region/zone/woreda combinations. For a good example of a master mapping file, please see this excel file (ADD LINK).'}
+    type: RichText
+  - layout_properties: {grid_position: 'SAHJFJ,YWPHCJ'}
+    name: label_2
+    properties: {bold: true, text: 'Master Mapping File:'}
+    type: Label
+  - event_bindings: {change: master_mapping_loader_change}
+    layout_properties: {grid_position: 'SAHJFJ,PVCHKX LNRZSF,SUAWZG'}
+    name: master_mapping_loader
+    properties: {align: center}
+    type: FileLoader
+  - layout_properties: {grid_position: 'SAHJFJ,PVCHKX LNRZSF,ACSMMD'}
+    name: mm_file_name
+    properties: {align: center, font_size: 10, text: 'No master mapping file uploaded, using default mapping.'}
+    type: Label
+  - layout_properties: {grid_position: 'CGLLMW,KCPYQJ'}
+    name: label_7_copy
+    properties: {bold: true, font_size: 20, text: 'Step 2: Upload an Input File and Specify Sheet Name'}
+    type: Label
+  - layout_properties: {grid_position: 'FWEVIQ,UIOSAI'}
+    name: rich_text_2_copy
+    properties: {content: 'Please upload a .xlsx file that you would like the correct Ethiopian mappings to be applied to. For a good example of an input file, please see this excel file (ADD LINK). You must also specify the name of the sheet within your excel file that contains the input data. Sheet names are typically located in the bottom left hand size of the screen while viewing an excel file.'}
+    type: RichText
+  - layout_properties: {grid_position: 'QAKMPZ,UFPQCF'}
+    name: label_2_copy
+    properties: {bold: true, text: 'Input File:'}
+    type: Label
+  - event_bindings: {change: input_file_loader_change}
+    layout_properties: {grid_position: 'QAKMPZ,AWSHEL'}
+    name: input_file_loader
+    properties: {align: center}
+    type: FileLoader
+  - layout_properties: {grid_position: 'QAKMPZ,CFFQUU'}
+    name: input_file_name
+    properties: {align: center, font_size: 10, text: No input file uploaded}
+    type: Label
+  - layout_properties: {grid_position: 'NYNANU,YLBOII'}
+    name: label_3
+    properties: {bold: true, text: 'Sheet Name:'}
+    type: Label
+  - layout_properties: {grid_position: 'NYNANU,KHROOF'}
+    name: text_box_1
+    properties: {placeholder: NEMO}
+    type: TextBox
+  - layout_properties: {grid_position: 'GZSEBM,YWDFMO'}
+    name: label_7_copy_copy
+    properties: {bold: true, font_size: 20, text: 'Step 3: Fill in the Remaining Text Boxes'}
+    type: Label
+  - layout_properties: {grid_position: 'GDCOMO,PWASAZ'}
+    name: rich_text_3
+    properties: {content: 'These three inputs are not necessary, but provide more customization for the translation. If left blank, these inputs will revert to their default values (the values already present in the textbooks). The output file name will be the name of the new file created when the Generate button is clicked. If you would like the model to be more strict in its mappings, consider increasing both the Low and XMed Confidence Scores. '}
+    type: RichText
+  - layout_properties: {grid_position: 'LFJLOU,YMBNVU'}
+    name: label_4
+    properties: {bold: true, text: 'Output File Name:'}
+    type: Label
+  - layout_properties: {grid_position: 'LFJLOU,HJGHEO'}
+    name: text_box_3
+    properties: {placeholder: Ethiopia_Mappings.xlsx}
+    type: TextBox
+  - layout_properties: {grid_position: 'GNDMUM,ZYXRSJ'}
+    name: label_5
+    properties: {bold: true, text: 'Low Confidence Score: '}
+    type: Label
+  - event_bindings: {change: text_box_4_change, pressed_enter: text_box_4_pressed_enter}
+    layout_properties: {grid_position: 'GNDMUM,LREYRA LLQNFC,RYVSPW'}
+    name: text_box_4
+    properties: {placeholder: '0.3'}
+    type: TextBox
+  - layout_properties: {grid_position: 'GNDMUM,LREYRA XVSVFS,BJQDQR'}
+    name: label_8
+    properties: {font_size: 12, text: (must be between 0 and 1)}
+    type: Label
+  - layout_properties: {grid_position: 'ICKBFQ,BDFSUP'}
+    name: label_6
+    properties: {bold: true, text: 'XMed Confidence Score: '}
+    type: Label
+  - layout_properties: {grid_position: 'ICKBFQ,DWOHKD SPFPCV,PLBWXW'}
+    name: text_box_5
+    properties: {placeholder: '0.4'}
+    type: TextBox
+  - layout_properties: {grid_position: 'ICKBFQ,DWOHKD KQEIHF,CJCGOL'}
+    name: label_8_copy
+    properties: {font_size: 12, text: (must be between 0 and 1)}
+    type: Label
+  - layout_properties: {grid_position: 'PPFJCL,QKFAWB'}
+    name: label_7_copy_copy_copy
+    properties: {bold: true, font_size: 20, text: 'Step 4: Click the Generate Button!'}
+    type: Label
+  - event_bindings: {click: outlined_button_1_click}
+    layout_properties: {grid_position: 'NPHFVZ,JYXSWY'}
+    name: outlined_button_1
+    properties: {role: filled-button, text: Generate, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'WBAOUE,MKKYHB'}
+    name: download_link_info
+    properties: {align: center, background: '', foreground: '', visible: false}
+    type: RichText
+  - event_bindings: {click: download_link_click}
+    layout_properties: {grid_position: 'DLGDAH,ULWBYA'}
+    name: download_link
+    properties: {align: center, visible: true}
+    type: Link
+  - components: []
+    layout_properties: {grid_position: 'XIJGAU,HGZHFB'}
+    name: rich_text_3_copy
+    properties: {align: center, content: 'Once the excel file is downloaded, you may come across two popups that are auto-generated by Excel. Remember that the program created an entirely new excel file, so do not worry about the original excel file becoming damaged. The first popup will look as such:'}
+    type: RichText
+  - layout_properties: {grid_position: 'LXNOCX,FMEXHJ'}
+    name: image_2
+    properties: {height: 264.11328125, source: _/theme/Screenshot 2024-12-05 at 10.20.43 PM.png}
+    type: Image
+  - components: []
+    layout_properties: {grid_position: 'SAEYWT,CXOOSY'}
+    name: rich_text_3_copy_copy
+    properties:
+      align: center
+      content: |
+        Click "Yes". A second popup will soon popup that will look like the following:
+    type: RichText
+  - layout_properties: {grid_position: 'DOLYXA,YPDKPX'}
+    name: image_2_copy
+    properties: {height: 221.46875, source: _/theme/Screenshot 2024-12-05 at 10.20.54 PM.png}
+    type: Image
+  - layout_properties: {grid_position: 'VIGHQR,AFENVX'}
+    name: rich_text_3_copy_copy_copy
+    properties:
+      align: center
+      content: |
+        Click "View". You now should be able to view the new excel file that contains all the mappings! Enjoy!
+    type: RichText
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{"SGKAXI":10,"EOSVLQ":65,"UFPQCF":25,"AWSHEL":15,"CFFQUU":20,"SUAWZG":25,"ACSMMD":35,"YWPHCJ":25,"PVCHKX":35,"YMBNVU":15,"HJGHEO":45,"ZYXRSJ":15,"LREYRA":45,"BDFSUP":15,"DWOHKD":45,"DVJVQE":10,"YLBOII":15,"KHROOF":45}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
