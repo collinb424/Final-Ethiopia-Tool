@@ -14,7 +14,7 @@ components:
     type: Image
   - layout_properties: {grid_position: 'EAVCYL,DDVNCO'}
     name: rich_text_1
-    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you!', font_size: 18}
+    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you', font_size: 18}
     type: RichText
   - layout_properties: {grid_position: 'HHBVLC,DXBSSB'}
     name: label_7
