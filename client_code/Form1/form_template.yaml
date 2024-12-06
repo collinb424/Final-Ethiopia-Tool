@@ -14,7 +14,7 @@ components:
     type: Image
   - layout_properties: {grid_position: 'EAVCYL,DDVNCO'}
     name: rich_text_1
-    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you', font_size: 18}
+    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you!', font_size: 18}
     type: RichText
   - layout_properties: {grid_position: 'HHBVLC,DXBSSB'}
     name: label_7
@@ -32,7 +32,7 @@ components:
   - event_bindings: {change: master_mapping_loader_change}
     layout_properties: {grid_position: 'SAHJFJ,PVCHKX LNRZSF,SUAWZG'}
     name: master_mapping_loader
-    properties: {align: center}
+    properties: {align: center, foreground: '#4d85ff'}
     type: FileLoader
   - layout_properties: {grid_position: 'SAHJFJ,PVCHKX LNRZSF,ACSMMD'}
     name: mm_file_name
@@ -53,7 +53,7 @@ components:
   - event_bindings: {change: input_file_loader_change}
     layout_properties: {grid_position: 'QAKMPZ,AWSHEL'}
     name: input_file_loader
-    properties: {align: center}
+    properties: {align: center, background: '', foreground: '#4d85ff'}
     type: FileLoader
   - layout_properties: {grid_position: 'QAKMPZ,CFFQUU'}
     name: input_file_name
@@ -65,7 +65,7 @@ components:
     type: Label
   - layout_properties: {grid_position: 'NYNANU,KHROOF'}
     name: text_box_1
-    properties: {placeholder: NEMO}
+    properties: {background: '#d3e0fd', placeholder: NEMO}
     type: TextBox
   - layout_properties: {grid_position: 'GZSEBM,YWDFMO'}
     name: label_7_copy_copy
@@ -81,7 +81,7 @@ components:
     type: Label
   - layout_properties: {grid_position: 'LFJLOU,HJGHEO'}
     name: text_box_3
-    properties: {placeholder: Ethiopia_Mappings.xlsx}
+    properties: {background: '#d3e0fd', placeholder: Ethiopia_Mappings.xlsx}
     type: TextBox
   - layout_properties: {grid_position: 'GNDMUM,ZYXRSJ'}
     name: label_5
@@ -90,7 +90,7 @@ components:
   - event_bindings: {change: text_box_4_change, pressed_enter: text_box_4_pressed_enter}
     layout_properties: {grid_position: 'GNDMUM,LREYRA LLQNFC,RYVSPW'}
     name: text_box_4
-    properties: {placeholder: '0.3'}
+    properties: {background: '#d3e0fd', placeholder: '0.3'}
     type: TextBox
   - layout_properties: {grid_position: 'GNDMUM,LREYRA XVSVFS,BJQDQR'}
     name: label_8
@@ -102,7 +102,7 @@ components:
     type: Label
   - layout_properties: {grid_position: 'ICKBFQ,DWOHKD SPFPCV,PLBWXW'}
     name: text_box_5
-    properties: {placeholder: '0.4'}
+    properties: {background: '#d3e0fd', placeholder: '0.4'}
     type: TextBox
   - layout_properties: {grid_position: 'ICKBFQ,DWOHKD KQEIHF,CJCGOL'}
     name: label_8_copy
@@ -115,7 +115,7 @@ components:
   - event_bindings: {click: outlined_button_1_click}
     layout_properties: {grid_position: 'NPHFVZ,JYXSWY'}
     name: outlined_button_1
-    properties: {role: filled-button, text: Generate, visible: true}
+    properties: {background: '#4d85ff', role: filled-button, text: Generate, visible: true}
     type: Button
   - layout_properties: {grid_position: 'WBAOUE,MKKYHB'}
     name: download_link_info
