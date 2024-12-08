@@ -12,9 +12,10 @@ components:
     name: image_1_copy
     properties: {height: 42.32421875, source: _/theme/Flag-Ethiopia.webp}
     type: Image
-  - layout_properties: {grid_position: 'EAVCYL,DDVNCO'}
+  - components: []
+    layout_properties: {grid_position: 'EAVCYL,DDVNCO'}
     name: rich_text_1
-    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! To get started, please precisely follow the directions below. If you run into any issues, please look at this document for more information. Thank you!', font_size: 18}
+    properties: {align: center, content: 'Welcome to our Ethiopia Locality Transliteration Standardizer (ELTS for short)! This tool will take an excel  file with incorrect spellings of Ethiopian region/zone/woredas, and will map these spellings to the closest, correct spelling. To get started, please precisely follow the directions below. If you run into any issues or would like to view the project documentation, please click [here](_/theme/Handover%20Document%20-%20Infectious%20Diseases%20-%20Data%20Cleanup.pdf).', font_size: 18}
     type: RichText
   - layout_properties: {grid_position: 'HHBVLC,DXBSSB'}
     name: label_7
@@ -23,7 +24,7 @@ components:
   - components: []
     layout_properties: {grid_position: 'CHZACW,KRERUM'}
     name: rich_text_2
-    properties: {content: 'Please upload a .xlsx file containing all correct Ethiopian region/zone/woreda translations you would like to be contained in your "Master Mapping". This file should contain all correct spellings for all Ethiopian region/zone/woreda combinations. For a good example of a master mapping file, please see this excel file (ADD LINK).'}
+    properties: {align: center, content: 'Please upload a .xlsx file containing all correct Ethiopian region/zone/woreda translations you would like to be contained in your "Master Mapping". This file should contain all correct spellings for all Ethiopian region/zone/woreda combinations. For a good example of a master mapping file, please see [this excel file](_/theme/2024_ETH_RBLF_Admin_Names_Compiled%20copy.xlsx).'}
     type: RichText
   - layout_properties: {grid_position: 'SAHJFJ,YWPHCJ'}
     name: label_2
@@ -44,7 +45,7 @@ components:
     type: Label
   - layout_properties: {grid_position: 'FWEVIQ,UIOSAI'}
     name: rich_text_2_copy
-    properties: {content: 'Please upload a .xlsx file that you would like the correct Ethiopian mappings to be applied to. For a good example of an input file, please see this excel file (ADD LINK). You must also specify the name of the sheet within your excel file that contains the input data. Sheet names are typically located in the bottom left hand size of the screen while viewing an excel file.'}
+    properties: {content: 'Please upload a .xlsx file that you would like the correct Ethiopian mappings to be applied to. For a good example of an input file, please see [this excel file](_/theme/Sample%20data%20file_river%20prospection%20copy.xlsx). You must also specify the name of the sheet within your excel file that contains the input data. Sheet names are typically located in the bottom left hand size of the screen while viewing an excel file.'}
     type: RichText
   - layout_properties: {grid_position: 'QAKMPZ,UFPQCF'}
     name: label_2_copy

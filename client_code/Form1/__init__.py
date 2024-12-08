@@ -1,5 +1,8 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 import anvil.server
 
 
@@ -78,5 +81,10 @@ class Form1(Form1Template):
 
     if low_score < 0 or low_score > 1:
         print('ERROR, input must be between 0 and 1')
+
+  def project_info_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    # download(self.project_info_link.file)
+    pass
 
   
