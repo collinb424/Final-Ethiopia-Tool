@@ -11,7 +11,7 @@ class Form1(Form1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  def outlined_button_1_click(self, **event_args):
+  def generate_file_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     master_mapping_file = self.master_mapping_loader.file
     input_file = self.input_file_loader.file  # The file loaded by the FileLoader
